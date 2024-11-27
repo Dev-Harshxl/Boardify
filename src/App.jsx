@@ -1,7 +1,8 @@
-import { useEffect } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Auth from "./pages/auth";
+import { useEffect } from "react";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import useStore from "./store";
@@ -38,7 +39,8 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<PublicOnlyRoute Component={AuthScreen} />}
+            // element={<PublicOnlyRoute Component={auth} />}
+            element={<Auth/>}
           />
           <Route
             path="/boards"
