@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Stack, TextField, Button, Typography } from "@mui/material";
 import LogoImg from "../../assets/logo.svg";
-import ImageEL from "../../components/utils/ImageEL";
+import ImageEl from "../../components/utils/ImageEl";
 import { auth } from "../../firebase";
 import {
   signInWithEmailAndPassword,
@@ -13,7 +13,7 @@ const initForm = {
   email: "",
   password: "",
 };
-const Auth = () => {
+const AuthScreen = () => {
   const [loading, setLoading] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
   const [form, setForm] = useState(initForm);
@@ -52,7 +52,7 @@ const Auth = () => {
       }}
     >
       <Stack mb={6} spacing={4} alignItems="center" textAlign="center">
-        <ImageEL src={LogoImg} alt="FlowBoard" />
+        <ImageEl src={LogoImg} alt="boardify" />
         <Typography color="rgba(255,255,255, .6)">
           Visualize Your Workflow for Increased Productivity.
           <br />
@@ -96,4 +96,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default AuthScreen;
