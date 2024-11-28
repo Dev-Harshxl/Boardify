@@ -7,6 +7,7 @@ import BoardCard from "./BoardCard";
 import CreateBoardModal from "./CreateBoardModal";
 import Topbar from "./Topbar";
 import NoBoards from "./NoBoards";
+import CreatedByMe from "../../components/layout/CreatedByMe";
 
 const BoardsScreen = () => {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,8 @@ const BoardsScreen = () => {
           </Grid>
         </Stack>
       )}
+            <CreatedByMe/>
+
     </>
   );
 };

@@ -78,16 +78,3 @@ You can copy it and use it directly
 
 ## Contributing
 Contributions are welcome! 
-
-
-npm instal
-mui
-emotion/react
-emotion/styled
-react-router-dom
-mui/icons-material
-firebase
-firebase tools
-snackbar
-zustand
-react-beautiful-dnd

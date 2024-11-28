@@ -7,6 +7,8 @@ import useStore from "../../store";
 import BoardInterface from "./BoardInterface";
 import BoardNotReady from "./BoardNotReady";
 import BoardTopbar from "./BoardTopbar";
+import CreatedByMe from "../../components/layout/CreatedByMe";
+
 
 const BoardScreen = () => {
   const navigate = useNavigate();
@@ -72,6 +74,8 @@ const BoardScreen = () => {
         boardId={boardId}
         updateLastUpdated={handleUpdateLastUpdated}
       />
+          <CreatedByMe props="mt:9"/>
+
     </>
   );
 };

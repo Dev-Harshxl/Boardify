@@ -8,6 +8,8 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import useStore from "../../store";
+import CreatedByMe from "../../components/layout/CreatedByMe";
+
 
 const initForm = {
   email: "",
@@ -92,6 +94,8 @@ const AuthScreen = () => {
       >
         {authText}
       </Typography>
+      <CreatedByMe/>
+
     </Container>
   );
 };
